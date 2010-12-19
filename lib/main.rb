@@ -1,4 +1,6 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
+# Starts all ruby files in this project
+ENV['RUNVAR'] = 'development'
+
+Dir["../lib/*.rb"].each {|file| require file }
 
 puts "Hello World"
